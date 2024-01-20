@@ -1,0 +1,65 @@
+.auto-list {
+   display: grid;
+   gap: 60px;
+}
+.car {
+   // .car__image
+   display: flex;
+   gap: 20px;
+   &__image {
+      flex: 0 1 15%;
+      position: relative;
+      padding-bottom: 11%;
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         object-fit: contain;
+      }
+   }
+   // .car__content
+   &__content {
+   }
+   // .car__name
+   &__name {
+      font-size: 18px;
+      line-height: 25px;
+      &:not(:last-child) {
+         margin-bottom: 10px;
+      }
+      color: #2999de;
+   }
+   &__descr {
+      font-size: 18px;
+      &:not(:last-child) {
+         margin-bottom: 5px;
+      }
+      line-height: 24px;
+   }
+}
+.prices {
+   display: flex;
+   gap: 20px;
+   &:not(:last-child) {
+      margin-bottom: 20px;
+   }
+   // .prices__price-in-dollar
+   &__price-in-dollar {
+      font-weight: 500;
+      font-size: 18px;
+      color: #24951c;
+   }
+   // .prices__price-in-uah
+   &__price-in-uah {
+   }
+}
+.references {
+   display: grid;
+   gap: 10px;
+   grid-template-columns: repeat(2, auto);
+   // .references__item
+   &__item {
+   }
+}
